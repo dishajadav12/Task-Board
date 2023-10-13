@@ -1,0 +1,256 @@
+/* Navbar */
+.nav-container{
+    height: 60px !important;
+    background-color: rgb(38,28,63);
+    box-shadow: 0px 1px 15px rgb(38,28,63);
+    padding-top: 1%;
+    font-size: large;
+    font-weight: 600;
+    text-align: center;
+
+}
+/* homepage */
+.status-columns{
+    display: flex;
+    justify-content: center;
+    margin: 5% 1% 0%;
+}
+.status-column-style{
+    margin: 0% 1%;
+    width: 25%;
+    height: 75vh;
+    border: 1px solid rgb(38,28,63);
+    box-shadow: 0px 1px 10px rgb(38,28,63);
+    border-radius: 10px;
+    padding:2% 2% 0%;
+}
+.status-heading{
+    margin-bottom: 5%;
+    font-size: 28px !important;
+    font-weight: 600;
+}
+.note-count{
+    float: right;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    padding-top: 4%;
+    color: rgb(124, 123, 123);
+}
+.task-list {
+  height: 50vh;
+  font-size: 18px;
+  z-index: -1;
+  overflow-y: auto; 
+}
+
+.task-list::-webkit-scrollbar {
+  width: 3px; /* Set the width of the scrollbar */
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 3px;
+}
+
+.task-list::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+.task-list::-webkit-scrollbar-track {
+  background: transparent; }
+
+.note-title{
+    margin: 2% 1%;
+    background-color: rgb(124, 123, 123) ;
+    padding:2% 4%;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+/* Add card functionalities */
+
+.btn-add-new{
+    margin-top: 5%;
+ color: rgb(124, 123, 123);
+ padding-right: 50%;
+}
+.btn-add-new:hover{
+    color:rgb(192, 189, 189) ;
+    background-color:rgb(124, 123, 123);
+}
+.btn-save-card{
+    margin-top: 0% !important;
+
+}
+.new-task{
+    background-color: rgb(23,20,33);
+    color: antiquewhite;    position: relative;
+    margin-top: -35%;
+    padding: 5% 2% 0%;
+    z-index: 1;
+}
+.title-input{
+    display: flex;
+    justify-content: flex-start;
+    margin: 1%;
+    border-radius: 10px;
+}
+.description-input{
+    margin: 1%;
+    border-radius: 5px;
+}
+.close-btn-container{
+    float: right;
+}
+.btn-closee{
+    color: rgb(64, 62, 62);
+}
+
+
+/* Note detail component */
+.note-detail-container{
+    margin: 5% 20%;
+    height: 70vh;
+    border: 1px solid rgb(38,28,63);
+    box-shadow: 0px 5px 10px rgb(38,28,63);
+    border-radius: 10px;
+    padding: 5% 2%;
+}
+.detail-desc{
+    margin: 2% auto;
+    height: 40vh;
+}
+.lower-container{
+    display: flex;
+    justify-content:flex-start;
+}
+.edit-save{
+    margin-left: 70%;
+}
+
+/* edit form */
+.edit-form{
+    height: 50vh;
+
+}
+.title-edit{
+    margin: 0% auto;
+    font-weight: 600;
+}
+.custom-input{
+    background-color: transparent;
+    border: 1px solid antiquewhite !important;
+    border-radius: 5px;
+    padding: 1% 2%;
+    color: antiquewhite;
+    margin: 1%;
+}
+input::placeholder {
+    color: rgb(124, 123, 123);
+    font-size: 14px; 
+  }
+textarea::placeholder{
+    color: rgb(124, 123, 123);
+    font-size: 14px; 
+}
+.btn-low{
+    margin-left: 1%;
+    color: rgb(124, 123, 123) ;
+}
+.btn-low:hover{
+    background-color: rgb(124, 123, 123);
+    margin-left: 1%;
+}
+
+/* Responsiveness */
+@media (max-width:1100px){
+    /* Navbar */
+.nav-container{
+    height: 50px !important;
+    background-color: rgb(38,28,63);
+    box-shadow: 0px 1px 15px rgb(38,28,63);
+    padding-top: 3%;
+    font-size: medium;
+    font-weight: 600;
+    text-align: center;
+
+}
+/* homepage */
+.status-columns{
+    display: block;
+    margin: 5% 1%;
+}
+.status-column-style{
+    margin:1% 5% ;
+    width: 90%;
+    height: 75vh;
+    border: 1px solid rgb(38,28,63);
+    box-shadow: 0px 1px 10px rgb(38,28,63);
+    border-radius: 10px;
+    padding:2% 2% 0%;
+}
+.status-heading{
+    margin-bottom: 5%;
+    font-size: 28px !important;
+    font-weight: 600;
+}
+
+
+/* Note detail component */
+.note-detail-container{
+    margin: 5%;
+    height: 70vh;
+    border: 1px solid rgb(38,28,63);
+    box-shadow: 0px 5px 10px rgb(38,28,63);
+    border-radius: 10px;
+    padding: 10% 5% 0;
+}
+.detail-desc{
+    margin: 2% auto;
+    height: 40vh;
+}
+.lower-container{
+    display: block;
+}
+.edit-save{
+    margin-left: 0%;
+}
+
+
+.edit-form{
+    height: 45vh;
+    font-size: medium;
+
+
+}
+.title-edit{
+    margin: 0% auto;
+    font-weight: 600;
+    font-size: medium;
+}
+.custom-input{
+    background-color: transparent;
+    border: 1px solid antiquewhite !important;
+    border-radius: 5px;
+    padding: 1% 2%;
+    color: antiquewhite;
+    margin: 1%;
+}
+input::placeholder {
+    color: rgb(124, 123, 123);
+    font-size: 14px; 
+  }
+textarea::placeholder{
+    color: rgb(124, 123, 123);
+    font-size: 14px; 
+}
+.btn-low{
+    margin-left: 1%;
+    color: rgb(124, 123, 123) ;
+}
+.btn-low:hover{
+    background-color: rgb(124, 123, 123);
+    margin-left: 1%;
+}
+
+}
