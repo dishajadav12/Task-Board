@@ -87,6 +87,8 @@ const ProjectBoard = () => {
     }
   }, []);
 
+  // Function to drag and drop title
+
   const handleDragStart = (e, column, task) => {
     e.dataTransfer.setData("text/plain", ""); // required for some browsers
     setDraggedTask(task);
@@ -113,6 +115,8 @@ const ProjectBoard = () => {
       setTargetColumn(null);
     }
   };
+
+  // Function to close add new task form 
   const handleClose = (column) => {
     setNewTasks((prevNewTasks) => ({
       ...prevNewTasks,
@@ -126,7 +130,7 @@ const ProjectBoard = () => {
 
   return (
     <div>
-
+      
       <div className="status-columns">
         {Object.keys(columns).map((column) => (
           <div
@@ -141,6 +145,7 @@ const ProjectBoard = () => {
               {column}{" "}
               <div className="note-count">{columns[column].length}</div>
             </div>
+            {/* To print task title and drag and drop functionality */}
             <div className="task-list">
               {columns[column].map((task, index) => (
                 <div
@@ -158,6 +163,8 @@ const ProjectBoard = () => {
                 </div>
               ))}
             </div>
+             
+             {/* For adding new card */}
             {addingNewTask[column] ? (
               <div className="new-task">
                 <div className="title-input">
